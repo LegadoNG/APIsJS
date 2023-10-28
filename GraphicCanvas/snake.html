@@ -23,6 +23,17 @@
         canvas {
             background-color: white;
         }
+        .boton-volver {
+            background-color: #0074D9;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .boton-volver:hover {
+            background-color: #0056A7;
+        }
     </style>
 </head>
 <body>
@@ -30,6 +41,7 @@
         <h1>Canvas HTML y Javascript</h1>
         <h2>Se ha comido <span></span></h2>
         <canvas id="canva" width="600" height="400"></canvas>
+        <button class="boton-volver" onclick="window.history.back()">Volver</button>
     </div>
     <script src="./snake.js"></script>
 </body>

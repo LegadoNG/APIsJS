@@ -34,13 +34,25 @@
         margin: 20px;
     }
 
-    #rigth button {
+    #btnBuscar {
         width: 50%;
         border: none;
         background-color: blueviolet;
         border-radius: 10px;
         color: white;
         padding: 10px;
+    }
+
+    .boton-volver {
+        background-color: #0074D9;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .boton-volver:hover {
+        background-color: #0056A7;
     }
 </style>
 <body>
@@ -56,6 +68,8 @@
             <hr>
             <input type="tel" name="city" id="city" placeholder="Ciudad"><br>
             <button id="btnBuscar">Buscar 🔎</button>
+
+            <button class="boton-volver" onclick="window.history.back()">Volver</button>
         </div>
     </div>
     <script src="./app.js"></script>
